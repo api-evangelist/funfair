@@ -1,8 +1,26 @@
 aid: funfair
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/funfair.png
 name: FunFair
-description: 'FunFair is a company surfaced as a portfolio company of pantera-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'FunFair began as FunFair Technologies, a blockchain gaming company that built
+  Ethereum-based casino infrastructure (the Fate Channels state-channel technology and the FUN
+  ERC-20 token) to let operators run provably-fair, on-chain casino games. The funfair.io domain
+  now redirects (302) to FunFair Ventures (funfair.ventures), an early-stage Web3 venture firm
+  run by the same team that invests across DeFi, gaming, infrastructure, NFTs, CeFi, social,
+  travel, and DePIN, and sponsors the Blockchain Gaming Alliance. FunFair exposes no public
+  developer API, OpenAPI specification, SDK, or documentation portal; its historical surface was
+  on-chain smart contracts rather than a hosted REST/HTTP API. This profile was surfaced as a
+  portfolio company of pantera-capital and enriched with live domain-security probe data.'
 url: https://raw.githubusercontent.com/api-evangelist/funfair/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Crypto
+- Blockchain
+- Web3
+- Gaming
+- Venture Capital
+- Ethereum
+- DeFi
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,19 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/funfair-domain-security.yml
 - type: Website
   url: https://funfair.io/
+- type: Website
+  name: FunFair Ventures
+  url: https://www.funfair.ventures/
+- type: X
+  url: https://x.com/funfairventures
+- type: LinkedIn
+  url: https://www.linkedin.com/company/funfair-ventures
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
